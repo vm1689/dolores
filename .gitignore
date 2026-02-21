@@ -1,0 +1,32 @@
+# Xcode
+*.xcuserstate
+xcuserdata/
+DerivedData/
+build/
+
+# Environment & secrets
+.env
+.env.*
+!.env.example
+
+# OS
+*.DS_Store
+Thumbs.db
+
+# Root-level reference images (not part of the app)
+/*.JPG
+/*.jpg
+
+# Node (simulation)
+node_modules/
+
+# Generated audio
+simulation/audio/questions/
+simulation/audio/modulate_results.json
+
+# IDE
+.vscode/
+.idea/
+
+# Misc
+*.log

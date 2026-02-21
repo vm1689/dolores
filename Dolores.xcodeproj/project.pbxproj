@@ -1,0 +1,394 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		06F05B944F2E80B37A9A929D /* AudioPlayerService.swift in Sources */ = {isa = PBXBuildFile; fileRef = D11F4CD4BE9FF25D7EE74712 /* AudioPlayerService.swift */; };
+		169128D7DF94CCC659550584 /* ScanningView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AD87A498EFA9BDD43E92B56 /* ScanningView.swift */; };
+		27442AF9CAB8A0DADCFEBD5C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 88D9D5DDCC606B6791061094 /* Assets.xcassets */; };
+		45EF935E6DA916ACABF38EBD /* great_wave.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = ACD6C2EC898825D2EDF35E27 /* great_wave.mp3 */; };
+		506EF0C93C89EA96508B5162 /* ConversationOverlay.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04C0ADE9886FD6F60D2F8573 /* ConversationOverlay.swift */; };
+		60244386572D72A2D6E13FE1 /* wheat_field.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 64DF93F5A488FE589493EAC7 /* wheat_field.mp3 */; };
+		9904DD1B69F9BD144F987B46 /* great_wave.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C0C457DC6703430F2B58CAA2 /* great_wave.jpg */; };
+		9BB659E5D8F73315C289CE2A /* DoloresApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFAE71A7DBCC88371A2B2110 /* DoloresApp.swift */; };
+		B617F53877843C01930E064D /* Artwork.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21557112361EFE06FE52A939 /* Artwork.swift */; };
+		C1E116286B41D85DDBC5F8C7 /* BeaconManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C704AE88F08D2ADDC3EF4EE /* BeaconManager.swift */; };
+		CF934D6A6E03C25A3AB5ECFA /* RealtimeService.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA89E9B05CD5F48CB13A95BF /* RealtimeService.swift */; };
+		E078A3F809E048F183C28A4D /* MetAPIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D1DCCF16E2DE3D8010E57F2 /* MetAPIService.swift */; };
+		EA5575E5C1BA18BAE573082F /* PlayerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA0CB5B440CC7F7124C61166 /* PlayerView.swift */; };
+		F85532848BB8F3411C17D829 /* wheat_field.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3B545B301944182E912913A6 /* wheat_field.jpg */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		04C0ADE9886FD6F60D2F8573 /* ConversationOverlay.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConversationOverlay.swift; sourceTree = "<group>"; };
+		21557112361EFE06FE52A939 /* Artwork.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Artwork.swift; sourceTree = "<group>"; };
+		3B545B301944182E912913A6 /* wheat_field.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = wheat_field.jpg; sourceTree = "<group>"; };
+		64DF93F5A488FE589493EAC7 /* wheat_field.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = wheat_field.mp3; sourceTree = "<group>"; };
+		71FEC563B622DFA985EE4C6E /* Dolores.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Dolores.entitlements; sourceTree = "<group>"; };
+		82AFF8D7466ED7315BE3C6F2 /* Dolores.app */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.application; path = Dolores.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		88D9D5DDCC606B6791061094 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		8D1DCCF16E2DE3D8010E57F2 /* MetAPIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MetAPIService.swift; sourceTree = "<group>"; };
+		9AD87A498EFA9BDD43E92B56 /* ScanningView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScanningView.swift; sourceTree = "<group>"; };
+		9C704AE88F08D2ADDC3EF4EE /* BeaconManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeaconManager.swift; sourceTree = "<group>"; };
+		AA89E9B05CD5F48CB13A95BF /* RealtimeService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealtimeService.swift; sourceTree = "<group>"; };
+		ACD6C2EC898825D2EDF35E27 /* great_wave.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = great_wave.mp3; sourceTree = "<group>"; };
+		AFAE71A7DBCC88371A2B2110 /* DoloresApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoloresApp.swift; sourceTree = "<group>"; };
+		C0C457DC6703430F2B58CAA2 /* great_wave.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = great_wave.jpg; sourceTree = "<group>"; };
+		D11F4CD4BE9FF25D7EE74712 /* AudioPlayerService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioPlayerService.swift; sourceTree = "<group>"; };
+		DA0CB5B440CC7F7124C61166 /* PlayerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerView.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXGroup section */
+		0A0487863E376870AD11BB26 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				21557112361EFE06FE52A939 /* Artwork.swift */,
+				9C704AE88F08D2ADDC3EF4EE /* BeaconManager.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		0D4C876D2DD4671AA37FCBD1 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				C0C457DC6703430F2B58CAA2 /* great_wave.jpg */,
+				ACD6C2EC898825D2EDF35E27 /* great_wave.mp3 */,
+				3B545B301944182E912913A6 /* wheat_field.jpg */,
+				64DF93F5A488FE589493EAC7 /* wheat_field.mp3 */,
+			);
+			name = Resources;
+			path = Dolores/Resources;
+			sourceTree = "<group>";
+		};
+		3306204C6F0FB72788FF2E64 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				D11F4CD4BE9FF25D7EE74712 /* AudioPlayerService.swift */,
+				8D1DCCF16E2DE3D8010E57F2 /* MetAPIService.swift */,
+				AA89E9B05CD5F48CB13A95BF /* RealtimeService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		8450D918972AC52153B0245E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				82AFF8D7466ED7315BE3C6F2 /* Dolores.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BA5CCA0B505BE1B2F4CAC4B3 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				04C0ADE9886FD6F60D2F8573 /* ConversationOverlay.swift */,
+				DA0CB5B440CC7F7124C61166 /* PlayerView.swift */,
+				9AD87A498EFA9BDD43E92B56 /* ScanningView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		C5B7D0849BEB319F6FCE281D = {
+			isa = PBXGroup;
+			children = (
+				D93D165A4CCEA1B5235DFBCF /* Dolores */,
+				0D4C876D2DD4671AA37FCBD1 /* Resources */,
+				8450D918972AC52153B0245E /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		D93D165A4CCEA1B5235DFBCF /* Dolores */ = {
+			isa = PBXGroup;
+			children = (
+				88D9D5DDCC606B6791061094 /* Assets.xcassets */,
+				71FEC563B622DFA985EE4C6E /* Dolores.entitlements */,
+				AFAE71A7DBCC88371A2B2110 /* DoloresApp.swift */,
+				0A0487863E376870AD11BB26 /* Models */,
+				3306204C6F0FB72788FF2E64 /* Services */,
+				BA5CCA0B505BE1B2F4CAC4B3 /* Views */,
+			);
+			path = Dolores;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3F5A16F67073416992375184 /* Dolores */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 64A2EC9C85314A6A0A0FB710 /* Build configuration list for PBXNativeTarget "Dolores" */;
+			buildPhases = (
+				77AD3AB7AF1552D86AE5D5B3 /* Sources */,
+				F6778F40FCDFB8A86DBA5373 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Dolores;
+			packageProductDependencies = (
+			);
+			productName = Dolores;
+			productReference = 82AFF8D7466ED7315BE3C6F2 /* Dolores.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		052AA3F438E5AAB53DDF486B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+				LastUpgradeCheck = 1500;
+				TargetAttributes = {
+					3F5A16F67073416992375184 = {
+						DevelopmentTeam = 74P3RP6862;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 933606012BCD7D434AAB1793 /* Build configuration list for PBXProject "Dolores" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+				en,
+			);
+			mainGroup = C5B7D0849BEB319F6FCE281D;
+			minimizedProjectReferenceProxies = 1;
+			preferredProjectObjectVersion = 77;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3F5A16F67073416992375184 /* Dolores */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F6778F40FCDFB8A86DBA5373 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				27442AF9CAB8A0DADCFEBD5C /* Assets.xcassets in Resources */,
+				9904DD1B69F9BD144F987B46 /* great_wave.jpg in Resources */,
+				45EF935E6DA916ACABF38EBD /* great_wave.mp3 in Resources */,
+				F85532848BB8F3411C17D829 /* wheat_field.jpg in Resources */,
+				60244386572D72A2D6E13FE1 /* wheat_field.mp3 in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		77AD3AB7AF1552D86AE5D5B3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B617F53877843C01930E064D /* Artwork.swift in Sources */,
+				06F05B944F2E80B37A9A929D /* AudioPlayerService.swift in Sources */,
+				C1E116286B41D85DDBC5F8C7 /* BeaconManager.swift in Sources */,
+				506EF0C93C89EA96508B5162 /* ConversationOverlay.swift in Sources */,
+				9BB659E5D8F73315C289CE2A /* DoloresApp.swift in Sources */,
+				E078A3F809E048F183C28A4D /* MetAPIService.swift in Sources */,
+				EA5575E5C1BA18BAE573082F /* PlayerView.swift in Sources */,
+				CF934D6A6E03C25A3AB5ECFA /* RealtimeService.swift in Sources */,
+				169128D7DF94CCC659550584 /* ScanningView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		4ADC95D1351575A051F02034 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = Dolores/Dolores.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 74P3RP6862;
+				INFOPLIST_FILE = Dolores/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.dolores.audioguide;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		885C7901CC8C5DDB1E0F4295 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = Dolores/Dolores.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 74P3RP6862;
+				INFOPLIST_FILE = Dolores/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.dolores.audioguide;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		E3B7D9E712D8481207FA8E4F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = 74P3RP6862;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_FILE = Dolores/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.9;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		F17D79B2D613F3CAAE4FB593 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = 74P3RP6862;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"DEBUG=1",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_FILE = Dolores/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.9;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		64A2EC9C85314A6A0A0FB710 /* Build configuration list for PBXNativeTarget "Dolores" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4ADC95D1351575A051F02034 /* Debug */,
+				885C7901CC8C5DDB1E0F4295 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		933606012BCD7D434AAB1793 /* Build configuration list for PBXProject "Dolores" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F17D79B2D613F3CAAE4FB593 /* Debug */,
+				E3B7D9E712D8481207FA8E4F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 052AA3F438E5AAB53DDF486B /* Project object */;
+}

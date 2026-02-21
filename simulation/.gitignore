@@ -1,0 +1,22 @@
+# Environment & secrets
+.env
+.env.*
+!.env.example
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Node
+node_modules/
+
+# Audio generated files
+audio/questions/
+audio/modulate_results.json
+
+# IDE
+.vscode/
+.idea/
+
+# Misc
+*.log

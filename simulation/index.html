@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Van Gogh Museum — Visitor Flow Simulation</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div id="app">
+        <!-- Canvas area -->
+        <div id="canvas-container">
+            <canvas id="sim-canvas"></canvas>
+        </div>
+
+        <!-- Sidebar -->
+        <div id="sidebar">
+            <!-- Tier 1: Identity + Controls (always visible, compact toolbar) -->
+            <div class="toolbar">
+                <div class="toolbar-top">
+                    <div class="toolbar-title">
+                        <h1>Van Gogh Museum</h1>
+                        <span class="toolbar-meta">12 artworks</span>
+                    </div>
+                    <div class="toolbar-actions">
+                        <button id="btn-play">Pause</button>
+                        <button id="btn-reset">Reset</button>
+                    </div>
+                </div>
+                <div class="toolbar-bottom">
+                    <div class="view-modes">
+                        <button id="btn-mode" class="btn-pill">Heatmap</button>
+                        <button id="btn-emotions" class="btn-pill">Emotions</button>
+                    </div>
+                    <div class="legend-inline">
+                        <span class="legend-dot" style="background:#27ae60" title="Entering"></span>
+                        <span class="legend-dot" style="background:#3498db" title="Walking"></span>
+                        <span class="legend-dot" style="background:#e67e22" title="Viewing"></span>
+                        <span class="legend-dot" style="background:#95a5a6" title="Exiting"></span>
+                    </div>
+                </div>
+                <div id="evolution-status" class="evolution-status idle"></div>
+                <div class="slider-row">
+                    <label>Speed</label>
+                    <input type="range" id="speed-slider" min="0.5" max="5" step="0.5" value="1">
+                    <span class="value-label" id="speed-value">1.0x</span>
+                    <label>Spawn</label>
+                    <input type="range" id="spawn-slider" min="0.1" max="3" step="0.1" value="0.5">
+                    <span class="value-label" id="spawn-value">0.5/s</span>
+                </div>
+            </div>
+
+            <!-- Tier 2: Key Metrics (4-number summary) -->
+            <div class="metrics-grid" id="stats-overview">
+                <div class="metric">
+                    <span class="metric-value">0</span>
+                    <span class="metric-label">Occupancy</span>
+                </div>
+                <div class="metric">
+                    <span class="metric-value">0</span>
+                    <span class="metric-label">Total</span>
+                </div>
+                <div class="metric">
+                    <span class="metric-value">0</span>
+                    <span class="metric-label">Completed</span>
+                </div>
+                <div class="metric">
+                    <span class="metric-value">0</span>
+                    <span class="metric-label">Avg Visit</span>
+                </div>
+            </div>
+
+            <!-- Tier 3: Scrollable detail area -->
+            <div class="detail-scroll">
+                <!-- Exhibit Popularity -->
+                <div class="panel">
+                    <div class="panel-header">
+                        <h2>Exhibit Popularity</h2>
+                    </div>
+                    <div id="stats-exhibits">
+                        <table>
+                            <thead><tr><th>#</th><th>Exhibit</th><th>Visits</th><th>Avg</th><th>Now</th></tr></thead>
+                            <tbody><tr><td colspan="5" class="empty-cell">Waiting for data...</td></tr></tbody>
+                        </table>
+                    </div>
+                </div>
+
+                <!-- Dolores + Emotions (grouped) -->
+                <div class="panel">
+                    <div class="panel-header">
+                        <h2><span class="dolores-icon">d</span> Dolores Audio Guide</h2>
+                        <div class="panel-actions">
+                            <button id="btn-export-qa" class="btn-tiny">Export Q&A</button>
+                            <button id="btn-export-evo" class="btn-tiny">Export Evo</button>
+                            <button id="btn-clear-qa" class="btn-tiny btn-danger">Clear</button>
+                        </div>
+                    </div>
+                    <div id="dolores-stats">
+                        <div class="stat-row"><span>Total Questions</span><span class="stat-value">0</span></div>
+                    </div>
+                    <span id="dolores-db-count" class="db-count">IndexedDB ready</span>
+                </div>
+
+                <!-- Emotions by Artwork -->
+                <div class="panel">
+                    <div class="panel-header">
+                        <h2>Emotions by Artwork</h2>
+                    </div>
+                    <div id="exhibit-emotions">
+                        <div class="empty-text">Waiting for Q&A data...</div>
+                    </div>
+                </div>
+
+                <!-- Live Q&A Feed -->
+                <div class="panel panel-feed">
+                    <div class="panel-header">
+                        <h2>Live Q&A Feed</h2>
+                    </div>
+                    <div id="dolores-feed">
+                        <div class="empty-text">Waiting for visitors to ask questions...</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Footer: keyboard hints -->
+            <div class="keyboard-bar">
+                <kbd>Space</kbd> Play <kbd>1</kbd> Dots <kbd>2</kbd> Heat <kbd>3</kbd> Emo <kbd>R</kbd> Reset
+            </div>
+        </div>
+    </div>
+
+    <!-- Scripts in dependency order -->
+    <script src="js/config.js"></script>
+    <script src="js/utils.js"></script>
+    <script src="js/floorplan.js"></script>
+    <script src="js/pathfinder.js"></script>
+    <script src="js/agent.js"></script>
+    <script src="js/heatmap.js"></script>
+    <script src="js/renderer.js"></script>
+    <script src="js/analytics.js"></script>
+    <script src="js/question_bank.js"></script>
+    <script src="js/dolores.js"></script>
+    <script src="js/evolution.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
